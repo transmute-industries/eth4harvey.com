@@ -11,27 +11,11 @@ import KeyBoardArrowUp from 'material-ui/svg-icons/hardware/keyboard-arrow-up';
 
 import Menu from 'material-ui/svg-icons/navigation/menu';
 import Drawer from 'material-ui/Drawer';
-import Dialog from 'material-ui/Dialog';
 import { connect } from 'react-redux';
-
 import { push } from 'react-router-redux';
-
 import { store } from '../../../store/store';
-
-// var QRCode = require('qrcode.react');
-
-// import TransmuteFramework from '../../../transmute';
-
 import TransmuteSnackbar from '../Snackbar/Snackbar';
-
 import Web3SettingsForm from '../Web3SettingsForm/Web3SettingsForm';
-
-// import {
-//   // createEventStore,
-//   UNSAFE_updateLightWallet
-// } from '../../../actions/transmute';
-
-
 class Login extends React.Component {
   static muiName = 'FlatButton';
   render() {
@@ -82,28 +66,18 @@ class TransmuteAppBar extends React.Component<any, any> {
             anchorOrigin={{ horizontal: 'right', vertical: 'top' }}
           >
             <MenuItem
-              primaryText="Sign out"
+              primaryText="Habitat Texas"
               onTouchTap={() => {
-                store.dispatch({
-                  type: 'LOGOUT',
-                  payload: {}
-                });
+                window.location.href = "http://habitattexas.org/";
               }}
             />
-            <MenuItem
-              primaryText="QR Transmute"
-              onTouchTap={() => {
-                this.setState({
-                  isQRCodeDisplayed: true
-                })
-              }}
-            />
+
           </IconMenu> : <Login />}
         />
         <Drawer open={this.state.open} docked={false} onRequestChange={(open) => this.setState({ open })}>
           <MenuItem
             onTouchTap={() => {
-              store.dispatch(push('/hurricane-harvey-ico'));
+              store.dispatch(push('/hurricane-harvey-relief'));
             }}
           >
             Home
@@ -111,20 +85,11 @@ class TransmuteAppBar extends React.Component<any, any> {
 
           <MenuItem
             onTouchTap={() => {
-              store.dispatch(push('/hurricane-harvey-ico/donate'));
+              store.dispatch(push('/hurricane-harvey-relief/donate'));
             }}
           >
             Donate
           </MenuItem>
-
-          <MenuItem
-            onTouchTap={() => {
-              store.dispatch(push('/hurricane-harvey-ico/about'));
-            }}
-          >
-            About
-          </MenuItem>
-
           <MenuItem
             rightIcon={(this.state.settingsOpen ? <KeyBoardArrowDown /> : <KeyBoardArrowUp />)}
             onTouchTap={() => {
@@ -139,21 +104,8 @@ class TransmuteAppBar extends React.Component<any, any> {
               <Web3SettingsForm />
             </div>
           }
-         
+
         </Drawer>
-        <Dialog
-          title={'Transmute Firebase JWT'}
-          actions={[]}
-          modal={false}
-          open={this.state.isQRCodeDisplayed}
-          onRequestClose={() => {
-            this.setState({ isQRCodeDisplayed: false });
-          }}
-        >
-          <div>
-            {/* <QRCode value="http://facebook.github.io/react/" size={256} /> */}
-          </div>
-        </Dialog>
         <TransmuteSnackbar />
       </div>
     );

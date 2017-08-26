@@ -1,7 +1,7 @@
-# Transmute hurricane-harvey-ico
+# Transmute hurricane-harvey-relief
 
-[![Build Status](https://travis-ci.org/transmute-industries/hurricane-harvey-ico.svg?branch=master)](https://travis-ci.org/transmute-industries/hurricane-harvey-ico)
-[![Coverage Status](https://coveralls.io/repos/github/transmute-industries/hurricane-harvey-ico/badge.svg?branch=master)](https://coveralls.io/github/transmute-industries/hurricane-harvey-ico?branch=master)
+[![Build Status](https://travis-ci.org/transmute-industries/hurricane-harvey-relief.svg?branch=master)](https://travis-ci.org/transmute-industries/hurricane-harvey-relief)
+[![Coverage Status](https://coveralls.io/repos/github/transmute-industries/hurricane-harvey-relief/badge.svg?branch=master)](https://coveralls.io/github/transmute-industries/hurricane-harvey-relief?branch=master)
 
 Create an issue if you want a feature or need help!
 
@@ -32,7 +32,7 @@ If you already had ipfs installed, you may need to `npm run ipfs:allow` this wil
 
 If everything works, the app will be available at:
 
-- http://localhost:3000/hurricane-harvey-ico
+- http://localhost:3000/hurricane-harvey-relief
 
 
 ### Run without docker
@@ -40,8 +40,8 @@ If everything works, the app will be available at:
 You will need to install https://ipfs.io/ & https://nodejs.org/en/
 
 ```
-$ git clone https://github.com/transmute-industries/hurricane-harvey-ico.git
-$ cd hurricane-harvey-ico
+$ git clone https://github.com/transmute-industries/hurricane-harvey-relief.git
+$ cd hurricane-harvey-relief
 $ npm install -g truffle ethereumjs-testrpc
 $ npm install
 $ npm run ipfs

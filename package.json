@@ -1,8 +1,8 @@
 {
-  "name": "hurricane-harvey-ico",
+  "name": "hurricane-harvey-relief",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://transmute-industries.github.io/hurricane-harvey-ico/",
+  "homepage": "https://transmute-industries.github.io/hurricane-harvey-relief/",
   "dependencies": {
     "@digix/truffle-lightwallet-provider": "^0.1.2",
     "classnames": "^2.2.5",

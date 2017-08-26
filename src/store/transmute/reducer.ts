@@ -30,6 +30,16 @@ let localStorage: any = window.localStorage || (function () {
         addresses: action.payload,
       };
     },
+
+    ['ETHER_SENT']: (state: any, action: any) => {
+      
+      return {
+        ...state,
+        snackbarMessage: action.payload,
+      };
+    },
+
+    
   };
   
   export const reducer = (state: any, action: any) => {
@@ -38,7 +48,7 @@ let localStorage: any = window.localStorage || (function () {
     }
     return {
       defaultAddress: localStorage.getItem('defaultAddress') || null,
-      addresses: null,
+      addresses: [],
       provider: localStorage.getItem('provider') || 'testrpc',
       ...state
     };

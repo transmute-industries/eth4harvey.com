@@ -29,9 +29,9 @@ ReactDOM.render(
     <ConnectedRouter history={history}>
       <MuiThemeProvider muiTheme={lightMuiTheme}>
         <div style={{ height: '100%' }}>
-          <Route exact={true} path="/hurricane-harvey-ico/" component={HomePage} />
-          <Route exact={true} path="/hurricane-harvey-ico/donate" component={DonatePage} />
-          {/* <Redirect from="*" to="/hurricane-harvey-ico/" /> */}
+          <Route exact={true} path="/hurricane-harvey-relief/" component={HomePage} />
+          <Route exact={true} path="/hurricane-harvey-relief/donate" component={DonatePage} />
+          {/* <Redirect from="*" to="/hurricane-harvey-relief/" /> */}
         </div>
       </MuiThemeProvider>
     </ConnectedRouter>

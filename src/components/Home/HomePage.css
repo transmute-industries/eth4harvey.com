@@ -1,16 +1,13 @@
 
-.logo-c {
-    margin:auto;
-    width: 300px;
-    height: 0px;
-}
 .logo {
-    margin-top: 40%;
-    position: relative;
-    width: 300px;
+    width: 100px;
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
 }
+
 .cta-c {
-    bottom: 64px;
+    top: 64px;
     position: absolute;
     color: #fff;
     left: 25%;
@@ -18,3 +15,7 @@
     text-align: center;
 }
 
+.habitatLogo{
+    width: 300px;
+    margin: auto;
+}

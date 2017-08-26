@@ -18,7 +18,7 @@ services:
     # volumes:
     #   - ~/.ipfs/:/data/ipfs/
     
-  hurricane-harvey-ico:
+  hurricane-harvey-relief:
     build:
       context: .
       dockerfile: Dockerfile

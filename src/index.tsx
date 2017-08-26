@@ -3,7 +3,7 @@ import * as ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { ConnectedRouter, } from 'react-router-redux';
 import {
-   Route, 
+   Route,
   //  Redirect
    } from 'react-router';
 import * as injectTapEventPlugin from 'react-tap-event-plugin';
@@ -19,11 +19,8 @@ console.debug('🦄  Transmute  🦄');
 import HomePage from './components/Home/HomePage';
 import DonatePage from './components/Donate/DonatePage'
 import LegalPage from './components/Legal/LegalPage'
-import { getAccounts } from './store/transmute/actions';
 
 const lightMuiTheme = getMuiTheme(lightBaseTheme);
-
-store.dispatch(getAccounts());
 
 ReactDOM.render(
   <Provider store={store}>

@@ -10,7 +10,7 @@ export const sendEth = async (fromAccount: string, toAccount: string, amountEth:
             to: toAccount,
             value: TransmuteFramework.web3.toWei(amountEth, 'ether'), 
             // gasLimit: 21000, 
-            gasPrice: 20000000000
+            // gasPrice: 20000000000
         }, (err: any, tx:string) => {
             if (err) {
                 reject(err);

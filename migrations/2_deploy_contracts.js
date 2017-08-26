@@ -24,8 +24,6 @@ var UnsafeEventStoreFactory = artifacts.require('./TransmuteFramework/EventStore
 var RBACEventStore = artifacts.require('./TransmuteFramework/EventStore/RBACEventStore/RBACEventStore.sol')
 var RBACEventStoreFactory = artifacts.require('./TransmuteFramework/EventStore/RBACEventStore/RBACEventStoreFactory.sol')
 
-
-
 const transmuteDeployer = function(deployer) {
   deployer.deploy(StringUtils)
 
@@ -84,7 +82,7 @@ var MetaCoin = artifacts.require("./MetaCoin.sol");
 
 module.exports = function(deployer) {
 	// Patched by Transmute Framework
-	transmuteDeployer(deployer)
+	// transmuteDeployer(deployer)
 
   deployer.deploy(ConvertLib);
   deployer.link(ConvertLib, MetaCoin);

@@ -18,24 +18,27 @@ export default class HomePage extends React.Component<any, any> {
             <Particle>
                 <div className="cta-c">
                     <img className="habitatLogo" src={habitatLogo} />
+                    <h3>ETH Relief for Hurricane Harvey Victims</h3>
+                    <h5>ETH4Harvey Campaign Open Aug. 26 - Sept. 25</h5>
                     <p>
-                    Habitat for Humanity is active in long-term recovery efforts after disasters. 
-                    Other agencies offer immediate support in the hours after a disaster. 
-                    Habitat is on the ground for weeks and months afterward. 
-                    Habitat Texas serves as the state-level contact to interface with relief 
-                    agencies and to assist affiliates in developing disaster response programs. 
+                        Habitat for Humanity Texas is now accepting donations in Ether (ETH).
+                    Use your ETH to help rebuild the communities and lives affected by Hurricane Harvey.
+                    100% of the proceeds are donated directly to Habitat for Humanity Texas to
+                    fund their long term disaster relief efforts in Harvey's aftermath.
                     </p>
                     <div className="btn-c">
                         <RaisedButton
                             secondary={true}
                             label="Donate ETH"
                             onTouchTap={() => {
-                                this.launchDemo('/hurricane-harvey-relief/donate');
+                                this.launchDemo('/donate');
                             }}
                         />
                     </div>
                 </div>
-                <img className="logo" src={transmuteLogo} />
+                <a href="https://transmute.industries" target="_blank">
+                    <img className="logo" src={transmuteLogo} />
+                </a>
             </Particle>
         );
     }

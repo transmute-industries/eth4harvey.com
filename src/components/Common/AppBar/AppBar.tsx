@@ -71,13 +71,30 @@ class TransmuteAppBar extends React.Component<any, any> {
                 window.location.href = "http://habitattexas.org/";
               }}
             />
-
+            <MenuItem
+              primaryText="Get MetaMask Wallet"
+              onTouchTap={() => {
+                window.location.href = "https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en";
+              }}
+            />
+            <MenuItem
+              primaryText="View Habitat Wallet"
+              onTouchTap={() => {
+                window.location.href = "https://etherscan.io/address/0xeD81c9058C78e28886E5411A2d55b42eB515f6E0";
+              }}
+            />
+            <MenuItem
+              primaryText="Open Source"
+              onTouchTap={() => {
+                window.location.href = "https://github.com/transmute-industries/eth4harvey.com";
+              }}
+            />
           </IconMenu> : <Login />}
         />
         <Drawer open={this.state.open} docked={false} onRequestChange={(open) => this.setState({ open })}>
           <MenuItem
             onTouchTap={() => {
-              store.dispatch(push('/hurricane-harvey-relief'));
+              store.dispatch(push('/'));
             }}
           >
             Home
@@ -85,7 +102,7 @@ class TransmuteAppBar extends React.Component<any, any> {
 
           <MenuItem
             onTouchTap={() => {
-              store.dispatch(push('/hurricane-harvey-relief/donate'));
+              store.dispatch(push('/donate'));
             }}
           >
             Donate

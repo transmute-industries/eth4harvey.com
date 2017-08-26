@@ -1,8 +1,8 @@
 {
-  "name": "hurricane-harvey-relief",
+  "name": "eth4harvey",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://transmute-industries.github.io/hurricane-harvey-relief/",
+  "homepage": "https://eth4harvey.com",
   "dependencies": {
     "@digix/truffle-lightwallet-provider": "^0.1.2",
     "classnames": "^2.2.5",
@@ -89,7 +89,7 @@
     "test:all": "npm run test && npm run truffle:test",
     "truffle:test": "truffle test",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "firebase deploy",
     "deploy:testnet": "truffle migrate --compile-all --network ropsten --reset --verbose-rpc",
     "transmute": "node ./node_modules/transmute-framework/build/cli/index.js",
     "testrpc": "pm2 start testrpc",

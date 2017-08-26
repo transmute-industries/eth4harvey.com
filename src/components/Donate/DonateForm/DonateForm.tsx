@@ -11,6 +11,10 @@ import Paper from 'material-ui/Paper'
 import {
     store
 } from '../../../store/store';
+
+
+import TransmuteFramework from '../../../transmute'
+
 export class FormComponent extends React.Component<any, any> {
 
     render() {
@@ -49,14 +53,13 @@ export default connect(
     ({ transmute }) => ({
         transmute: transmute,
         initialValues: {
-            defaultAddress: transmute.defaultAddress,
-            fromAddress: transmute.defaultAddress,
-            toAddress: '0x5a3e003af99ffa2b2d30627aa136738b168523b5',
+            fromAddress: TransmuteFramework.web3.eth.accounts[0],
+            toAddress: '0xeD81c9058C78e28886E5411A2d55b42eB515f6E0',
+            // https://etherscan.io/address/0xeD81c9058C78e28886E5411A2d55b42eB515f6E0
             donationAmount: .1,
             provider: transmute.provider,
         },
         onSubmit: (formData: any) => {
-            // console.debug('submit donaton!!!!', formData)
             store.dispatch(sendEther(formData.fromAddress, formData.toAddress, formData.donationAmount));
         }
     }),

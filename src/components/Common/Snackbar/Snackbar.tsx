@@ -17,6 +17,7 @@ class TransmuteSnackbar extends React.Component<any, any> {
                 open: true,
                 message: nextProps.transmute.snackbarMessage
             });
+            
         }
     }
     handleRequestClose = () => {

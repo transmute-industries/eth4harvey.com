@@ -5,6 +5,12 @@ import * as _ from 'lodash';
 import { sendEth } from './middleware'
 
 export const getAccounts = () => (dispatch: any) => {
+
+    if (!TransmuteFramework.web3) {
+        alert('You need MetaMask to donate ETH. You will be redirected to install MetaMask.');
+        window.location.href = "https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en";
+    }
+    
     TransmuteFramework.web3.eth
         .getAccounts((err: any, addresses: string[]) => {
             if (err) { throw err; }
@@ -40,7 +46,10 @@ export const sendEther = (fromAddress: string, toAddress: string, amountEth: num
         let tx = await sendEth(fromAddress, toAddress, amountEth);
         dispatch({
             type: 'ETHER_SENT',
-            payload: tx
+            payload: {
+                tx,
+                amountEth
+            }
         });
     };
 

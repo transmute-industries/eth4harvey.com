@@ -1,59 +1,12 @@
-# Transmute hurricane-harvey-relief
+# ETH 4 Harvey
 
-[![Build Status](https://travis-ci.org/transmute-industries/hurricane-harvey-relief.svg?branch=master)](https://travis-ci.org/transmute-industries/hurricane-harvey-relief)
-[![Coverage Status](https://coveralls.io/repos/github/transmute-industries/hurricane-harvey-relief/badge.svg?branch=master)](https://coveralls.io/github/transmute-industries/hurricane-harvey-relief?branch=master)
+https://eth4harvey.com/
 
-Create an issue if you want a feature or need help!
+Habitat for Humanity Texas is now accepting donations in Ether (ETH).
+Use your ETH to help rebuild the communities and lives affected by Hurricane Harvey.
+100% of the proceeds are donated directly to Habitat for Humanity Texas to
+fund their long term disaster relief efforts in Harvey's aftermath.
 
-Please fork and submit PRs!
+Track Donations here:
 
-You will need to install NodeJS - https://nodejs.org/en/
-
-### Austin Ethereum Meetup 
-
-- [Slides](https://docs.google.com/presentation/d/1LCgV4OQGAY7fFU1kpY4ZHmqO0c0o7MNXWPNZoTjCdJc/edit#slide=id.g23ff527f6a_0_238)
-- [Video](https://www.youtube.com/watch?v=vYjkoFVoBSQ)
-
-## Docker
-
-- Linux: https://docs.docker.com/engine/admin/#start-the-daemon-using-operating-system-utilities
-- OSX / Windows: Make sure docker daemon is running!
-
-### Just run
-```
-$ docker-compose up
-```
-### Build and run (slow)
-```
-$ docker-compose up --build
-```
-
-If you already had ipfs installed, you may need to `npm run ipfs:allow` this will add localhost:3000 to ipfs access control allow origin.
-
-If everything works, the app will be available at:
-
-- http://localhost:3000/hurricane-harvey-relief
-
-
-### Run without docker
-
-You will need to install https://ipfs.io/ & https://nodejs.org/en/
-
-```
-$ git clone https://github.com/transmute-industries/hurricane-harvey-relief.git
-$ cd hurricane-harvey-relief
-$ npm install -g truffle ethereumjs-testrpc
-$ npm install
-$ npm run ipfs
-$ npm run testrpc
-$ npm run test
-$ npm run migrate
-$ npm run start
-```
-
-### Features
-
-- Docker with React Hot Module Reload!
-- Jest and Truffle Tests
-- TypeScript
-- Redux + Transmute Framework (Redux for Smart Contracts)
+https://etherscan.io/address/0xeD81c9058C78e28886E5411A2d55b42eB515f6E0

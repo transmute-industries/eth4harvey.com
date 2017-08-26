@@ -1,0 +1,20 @@
+
+.logo-c {
+    margin:auto;
+    width: 300px;
+    height: 0px;
+}
+.logo {
+    margin-top: 40%;
+    position: relative;
+    width: 300px;
+}
+.cta-c {
+    bottom: 64px;
+    position: absolute;
+    color: #fff;
+    left: 25%;
+    right: 25%;
+    text-align: center;
+}
+

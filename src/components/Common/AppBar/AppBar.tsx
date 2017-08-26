@@ -89,6 +89,13 @@ class TransmuteAppBar extends React.Component<any, any> {
                 window.location.href = "https://github.com/transmute-industries/eth4harvey.com";
               }}
             />
+
+            <MenuItem
+              primaryText="Legal"
+              onTouchTap={() => {
+                store.dispatch(push('/legal'));
+              }}
+            />
           </IconMenu> : <Login />}
         />
         <Drawer open={this.state.open} docked={false} onRequestChange={(open) => this.setState({ open })}>
@@ -106,6 +113,13 @@ class TransmuteAppBar extends React.Component<any, any> {
             }}
           >
             Donate
+          </MenuItem>
+          <MenuItem
+            onTouchTap={() => {
+              store.dispatch(push('/legal'));
+            }}
+          >
+            Legal
           </MenuItem>
           <MenuItem
             rightIcon={(this.state.settingsOpen ? <KeyBoardArrowDown /> : <KeyBoardArrowUp />)}

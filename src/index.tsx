@@ -18,6 +18,7 @@ console.debug('🦄  Transmute  🦄');
 
 import HomePage from './components/Home/HomePage';
 import DonatePage from './components/Donate/DonatePage'
+import LegalPage from './components/Legal/LegalPage'
 import { getAccounts } from './store/transmute/actions';
 
 const lightMuiTheme = getMuiTheme(lightBaseTheme);
@@ -31,6 +32,7 @@ ReactDOM.render(
         <div style={{ height: '100%' }}>
           <Route exact={true} path="/" component={HomePage} />
           <Route exact={true} path="/donate" component={DonatePage} />
+          <Route exact={true} path="/legal" component={LegalPage} />
         </div>
       </MuiThemeProvider>
     </ConnectedRouter>

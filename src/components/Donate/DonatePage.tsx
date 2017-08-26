@@ -4,7 +4,7 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 import AppBar from '../Common/AppBar/AppBar'
 import DonateForm from './DonateForm/DonateForm'
 const logo = require('../../images/harvey/habitat.png');
-// import Paper from 'material-ui/Paper'
+
 export default class DonatePage extends React.Component<any, any> {
     render() {
         return (

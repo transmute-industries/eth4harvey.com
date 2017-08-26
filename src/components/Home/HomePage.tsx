@@ -8,6 +8,8 @@ import { store } from '../../store/store';
 const transmuteLogo = require('../../images/logo-white.png');
 const habitatLogo = require('../../images/harvey/habitat.png');
 
+
+
 export default class HomePage extends React.Component<any, any> {
     launchDemo(path: string) {
         console.debug(path);
@@ -26,6 +28,8 @@ export default class HomePage extends React.Component<any, any> {
                     100% of the proceeds are donated directly to Habitat for Humanity Texas to
                     fund their long term disaster relief efforts in Harvey's aftermath.
                     </p>
+
+                 
                     <div className="btn-c">
                         <RaisedButton
                             secondary={true}

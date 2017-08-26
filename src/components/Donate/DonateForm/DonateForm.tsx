@@ -7,7 +7,7 @@ import {
 import RaisedButton from 'material-ui/RaisedButton';
 import { sendEther } from '../../../store/transmute/actions';
 import './DonateForm.css'
-import Paper from 'material-ui/Paper'
+
 import {
     store
 } from '../../../store/store';
@@ -20,7 +20,7 @@ export class FormComponent extends React.Component<any, any> {
     render() {
 
         return (
-            <Paper>
+          
                 <form className='DonateForm' style={{ width: '100%' }}>
                     <h4>Your Wallet Address</h4>
                     <Field name="fromAddress" style={{ width: '100%' }} component={TextField} hintText="From Address" />
@@ -39,7 +39,7 @@ export class FormComponent extends React.Component<any, any> {
                         }}
                     />
                 </form>
-            </Paper>
+           
         );
     }
 }

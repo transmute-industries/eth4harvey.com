@@ -1,21 +1,30 @@
 
-.logo {
-    width: 100px;
-    position: absolute;
-    bottom: 12px;
-    right: 12px;
-}
-
 .cta-c {
-    top: 64px;
+    /* top: 64px; */
     position: absolute;
     color: #fff;
-    left: 25%;
-    right: 25%;
     text-align: center;
+    height: 100%;
 }
+
 
 .habitatLogo{
     width: 300px;
     margin: auto;
+}
+
+.blurb {
+    width: 70%;
+    margin: auto;
+    padding-bottom: 32px;
+}
+
+.transmuteLogo {
+    width: 100px;
+    /* position: absolute;
+    bottom: 12px;
+    right: 12px; */
+    display: block;
+    margin: auto;
+    padding-top: 64px;
 }

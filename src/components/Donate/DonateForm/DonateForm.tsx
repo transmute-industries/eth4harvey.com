@@ -20,26 +20,32 @@ export class FormComponent extends React.Component<any, any> {
     render() {
 
         return (
-          
-                <form className='DonateForm' style={{ width: '100%' }}>
-                    <h4>Your Wallet Address</h4>
-                    <Field name="fromAddress" style={{ width: '100%' }} component={TextField} hintText="From Address" />
-                    <br />
-                    <h4>Habitat Texas Relief Fund Wallet</h4>
-                    <Field name="toAddress" disabled style={{ width: '100%' }} component={TextField} hintText="To Address" />
-                    <br />
-                    <h4>Donation Amount in ETH</h4>
-                    <Field name="donationAmount" style={{ width: '100%' }} component={TextField} hintText="Donation Amount" />
-                    <br />
-                    <RaisedButton
-                        secondary={true}
-                        label="Donate"
-                        onTouchTap={() => {
+
+            <form className='DonateForm' style={{ width: '100%' }}>
+                <h4>Your Wallet Address</h4>
+                <Field name="fromAddress" style={{ width: '100%' }} component={TextField} hintText="From Address" />
+                <br />
+                <h4>Habitat Texas Relief Fund Wallet</h4>
+                <Field name="toAddress" disabled style={{ width: '100%' }} component={TextField} hintText="To Address" />
+                <br />
+                <h4>Donation Amount in ETH</h4>
+                <Field name="donationAmount" style={{ width: '100%' }} component={TextField} hintText="Donation Amount" />
+                <br />
+                <RaisedButton
+                    secondary={true}
+                    label="Donate"
+                    onTouchTap={() => {
+                        if (!TransmuteFramework.web3) {
+                            alert('You will be redirected to install metamask.')
+                            window.location.href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en";
+                        } else {
                             this.props.handleSubmit();
-                        }}
-                    />
-                </form>
-           
+                        }
+
+                    }}
+                />
+            </form>
+
         );
     }
 }
@@ -49,11 +55,17 @@ const form = reduxForm({
     enableReinitialization: true
 })(FormComponent);
 
+let fromAddress: string;
+
+if (TransmuteFramework.web3) {
+    fromAddress = TransmuteFramework.web3.eth.accounts[0]
+}
+
 export default connect(
     ({ transmute }) => ({
         transmute: transmute,
         initialValues: {
-            fromAddress: TransmuteFramework.web3.eth.accounts[0],
+            fromAddress: fromAddress,
             toAddress: '0xeD81c9058C78e28886E5411A2d55b42eB515f6E0',
             // https://etherscan.io/address/0xeD81c9058C78e28886E5411A2d55b42eB515f6E0
             donationAmount: .1,

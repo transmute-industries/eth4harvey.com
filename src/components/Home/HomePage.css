@@ -4,9 +4,8 @@
     position: absolute;
     color: #fff;
     text-align: center;
-    height: 100%;
+    
 }
-
 
 .habitatLogo{
     width: 300px;
@@ -26,5 +25,6 @@
     right: 12px; */
     display: block;
     margin: auto;
-    padding-top: 64px;
+    padding-top: 32px;
+    padding-bottom: 16px;
 }

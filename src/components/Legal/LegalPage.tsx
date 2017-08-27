@@ -14,72 +14,40 @@ return (
 1. Information We Collect From You
 </h2>
 <p>
-You can visit this website without revealing any information to us about yourself. However, there are parts of the eth4Harvey website where we will need to collect some of your personal information in order for you to proceed.
+You can visit this website without revealing any information to us about yourself.
 </p>
 <h3>
 Personal Information
 </h3>
 <p>
-If you donate on eth4harvey, we collect the donor name, ETH donation amount, the organization donated to, and the mesage you include with your ETH donation. 
-</p>
-<h3>
-Anonymised User Information
-</h3>
-<p>
-This type of information helps us to enhance the website and improve its navigability.
- It also helps us to improve the quality of the online services and information you can access.
- In order to facilitate this, we use cookies to identify specific information about your visits to the site.
+If you donate on eth4harvey, you can optionally provide your donor email address and name in association with your transaction ID and donation amount.
 </p>
 <h2>
 Why we Collect Personal Information From You
 </h2>
 <p>
-Your personal information is needed so that you can use the transactional areas of our website.
+Any personal information collected is for the providing of a receipt of donation from Habitat for Humanity.
 </p>
 <h2>
 How we use Your Personal Information
 </h2>
 <p>
-Your personal information enables us to supply the services you have requested. 
-Your personal information may be passed by eth4harvey to Habitat for Humanity Texas, to inform them of your ETH donation. 
+Your personal information may be passed by eth4harvey to Habitat for Humanity Texas, to inform them of your ETH donation.
 If you wish to donate anonymously, please leave the form blank.
 </p>
 <h2>
 Protection of Your Personal Information
 </h2>
 <p>
-If you make a donation in ETH, we use MetaMask to facilitate the transfer of ETH from your wallet to the Habitat for Humanity Texas Wallet. 
-MetaMask has its own terms of use and privacy policy which can be accessed via their <a href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en" >website</a>.
-In all other cases, the information you provide to us (Name, Email, Transaction ID, Amount) will be shared with Habitat for Humanity Texas. 
-The Transaction ID and your wallet address are public by the nature of the Ethereum Blockchain.
+If you elect to provide to us with personal information (Name, Email, Transaction ID, Amount), it will be shared solely with Habitat for Humanity Texas.
 </p>
-<h2>
-Cookies
-</h2>
-<p>
-A cookie is a small file that is put on your computer. This file identifies specific information about your visits to the site. 
-Cookies can only be read, and therefore used, by our web servers.
-Our cookies do not save or store any personal information as such; they take the form of a unique numerical identifier that enables a computer, but not an individual, to be recognised. 
-Cookies do not detect and cannot access any information you may have on your computer.
-</p>
-<h3>
-Persistent Cookies
-</h3>
-<p>
-A persistent cookie remembers your computer and, by doing so, allows us to identify specific information about your visits to the site.
-We use Google Analytics to assess your experience on our website by storing a non-intrusive persistent cookie on your browser.
-This tool gathers anonymous data, which we use to continually improve our online services and information.
 
-You may set up your browser to reject these cookies - consult the help menu of your browser for details. 
-If you block the use of cookies, you may not be able to use some of the features on our site.
-</p>
 <h2>
 Changes to our Privacy Policy
 </h2>
 <p>
-Any changes to our privacy policy in the future will be posted to the website and, where appropriate, through e-mail notification. 
+Any changes to our privacy policy in the future will be posted to the website.
 Unless otherwise specified all such changes will take effect immediately upon posting to the website.
-Back to top
 </p>
 <h2>
 Legal Process
@@ -88,20 +56,20 @@ Legal Process
 Although unlikely, eth4harvey may be forced by law to provide personally identifiable information to the appropriate authorities.
 </p>
 <h2>
-8. Acceptance of our Privacy Policy
+Acceptance of our Privacy Policy
 </h2>
 <p>
-Use of the eth4harvey website and associated services implies acceptance of this Privacy Policy. 
-If you are not satisfied with any aspect of it, please do not continue to use the website and services. 
+Use of the eth4harvey website and associated services implies acceptance of this Privacy Policy.
+If you are not satisfied with any aspect of it, please do not continue to use the website and services.
 This policy may change from time to time and you are deemed to have accepted the current version each time you use eth4harvey.com or any site powered by us.
 
-If you have any questions about our Privacy Policy please contact us via email at <a href="mailto:contact@eth4harvey.com" target="_top" >contactt@eth4harvey.com</a>.
+If you have any questions about our Privacy Policy please contact us via email at <a href="mailto:contact@eth4harvey.com" target="_top" >contact@eth4harvey.com</a>.
 </p>
 
 <h3>Terms of Service</h3>
 <p>
 Welcome to eth4harvey.com. These Terms of Use govern your access to and use of this website
-and various online tools and services that eth4harvey makes available to donors, fundraisers, nonprofits
+and various online tools and services that eth4harvey makes available to donors
 (“NPO(s)”), registrants and all others users of the eth4harvey service, collectively called Users
 of the eth4harvey service (the Service).
 </p>
@@ -150,13 +118,7 @@ as Your agent and on Your behalf, the following services (the Services):
 </p>
 
 <p>
-1. In exchange for the Services described herein, eth4harvey will be paid and process online donations (online Donations) made by individuals or entities (Donors) through the eth4harvey Service.
-</p>
-<p>
-2. Habitat for Humanity Texas holds the funds received through online ETH Donations in a wallet.
-</p>
-<p>
-3. eth4harvey remits funds to the designated wallet electronically for online Donations.  
+1. The facilitation of online donations made by individuals or entities through the eth4harvey Service.
 </p>
 
 <h3>
@@ -164,15 +126,13 @@ as Your agent and on Your behalf, the following services (the Services):
 </h3>
 
 <p>
-Donors will pay the online Donations by ETH to Habitat for Humanity Texas as your Agent. The fees deducted by from the online Donations
-pursuant to Section 2 will be deposited into Habitat for Humanity Texas wallet at the time of the transaction. Payment
-to the designated NPO pursuant to Section 2 above will be made either Nonprofit users
-will be responsible for taxes based on its net income or gross receipts.
+Donors will make donations to Habitat for Humanity Texas in ETH which will be deposited into Habitat for Humanity Texas wallet at the time of the transaction.
+Users will be responsible maintaining transaction information and receipts for taxation purposes.
 </p>
 
 
 <h3>
-6. Information on Website
+4. Information on Website
 </h3>
 
 <p>
@@ -193,7 +153,7 @@ or sell any goods or services.
 </p>
 
 <h3>
-7. Intellectual Property Rights
+5. Intellectual Property Rights
 </h3>
 
 <p>
@@ -206,7 +166,7 @@ You are granted limited license only for purposes of viewing the material contai
 </p>
 
 <h3>
-8. Representations and Warranties; Disclaimers
+6. Representations and Warranties; Disclaimers
 </h3>
 
 <p>
@@ -230,7 +190,7 @@ User on each of the applicable federal and state tax returns.
 </p>
 
 <h3>
-9. Indemnification
+7. Indemnification
 </h3>
 
 <p>
@@ -250,7 +210,7 @@ constitutes, or contains material that constitutes, libel, defamation or an inva
 </p>
 
 <h3>
-10. Limitations on Liability
+8. Limitations on Liability
 </h3>
 
 <p>
@@ -276,7 +236,7 @@ of warranty set forth in these Terms of Use.
 </p>
 
 <h3>
-11. Force Majeure
+9. Force Majeure
 </h3>
 
 <p>
@@ -287,13 +247,12 @@ circumstance beyond or event beyond a party’s reasonable control.
 </p>
 
 <h3>
-12. Term; Termination
+10. Term; Termination
 </h3>
 
 <p>
 This Agreement shall commence upon your initial use of this Service and continue until the earlier of (i) termination of
-your rights to use the Service by eth4harvey or (ii) your ceasing to use the Service. Sections 3,
-5, and 7 through 14 shall survive any termination or expiration of these Terms of Use.
+your rights to use the Service by eth4harvey or (ii) your ceasing to use the Service. Sections 3 and 5 through 12 shall survive any termination or expiration of these Terms of Use.
 </p>
 
 <h3>

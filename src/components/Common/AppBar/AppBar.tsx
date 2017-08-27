@@ -5,6 +5,8 @@ import MenuItem from 'material-ui/MenuItem';
 
 import Menu from 'material-ui/svg-icons/navigation/menu';
 import Drawer from 'material-ui/Drawer';
+import Divider from 'material-ui/Divider';
+import Subheader from 'material-ui/Subheader';
 import { connect } from 'react-redux';
 import { push } from 'react-router-redux';
 import { store } from '../../../store/store';
@@ -38,29 +40,35 @@ class TransmuteAppBar extends React.Component<any, any> {
             }}
           />
           <MenuItem
-            primaryText="Habitat Texas Site"
+            primaryText="Donate"
+            onTouchTap={() => {
+              store.dispatch(push('/donate'));
+            }}
+          />
+          <Divider />
+          <Subheader>Habitat For Humanity</Subheader>
+          <MenuItem
+            primaryText="Texas Site"
             onTouchTap={() => {
               window.location.href = "http://habitattexas.org/";
             }}
           />
           <MenuItem
-            primaryText="Habitat Wallet"
+            primaryText="Public Wallet"
             onTouchTap={() => {
               window.location.href = "https://etherscan.io/address/0xeD81c9058C78e28886E5411A2d55b42eB515f6E0";
             }}
           />
+          <Divider />
+          <Subheader>Resources</Subheader>
           <MenuItem
-            primaryText="Get MetaMask Wallet"
-            onTouchTap={() => {
-              window.location.href = "https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en";
-            }}
-          />
-          <MenuItem
-            primaryText="Open Source"
+            primaryText="Website Source"
             onTouchTap={() => {
               window.location.href = "https://github.com/transmute-industries/eth4harvey.com";
             }}
           />
+          <Divider />
+          <Subheader>Legal</Subheader>
           <MenuItem
             primaryText="Terms And Conditions"
             onTouchTap={() => {

@@ -28,20 +28,15 @@ export default class DonatePage extends React.Component<any, any> {
                         We also coordinate the Texas affiliate response with the affected affiliates.
                         Of course, planning is the best defense, so we help teach resilient building
                         techniques and offer disaster planning help.
-
-                        <a href="https://etherscan.io/address/0xeD81c9058C78e28886E5411A2d55b42eB515f6E0" target="_blank">
-                        Wallet History
-                        </a>
                         </Col>
                     </Row>
                     <Row >
-                        <Col xs={12} sm={4}>
-                            <h2>Habitat Wallet</h2>
-                            <p style={{ wordWrap: 'break-word'}}>0xeD81c9058C78e28886E5411A2d55b42eB515f6E0</p>
-                            <QRCode value="0xeD81c9058C78e28886E5411A2d55b42eB515f6E0" size={256} />
-                        </Col>
                         <Col xs={12} sm={8}>
                             <DonateForm />
+                        </Col>
+                        <Col xs={12} sm={4}>
+                            <QRCode value="0xeD81c9058C78e28886E5411A2d55b42eB515f6E0" size={256}
+                                    style={{ display: 'block', margin: 'auto'}} />
                         </Col>
                     </Row>
                 </Grid>

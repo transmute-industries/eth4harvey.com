@@ -41,11 +41,10 @@ export class FormComponent extends React.Component<any, any> {
                         } else {
                             this.props.handleSubmit();
                         }
-
                     }}
+                    style={{ float: 'right' }}
                 />
             </form>
-
         );
     }
 }

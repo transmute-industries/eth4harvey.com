@@ -4,6 +4,8 @@ import { Field, reduxForm } from 'redux-form';
 import {
     TextField,
 } from 'redux-form-material-ui';
+import Dialog from 'material-ui/Dialog';
+import FlatButton from 'material-ui/FlatButton';
 import RaisedButton from 'material-ui/RaisedButton';
 import { sendEther } from '../../../store/transmute/actions';
 import './DonateForm.css'
@@ -22,52 +24,71 @@ if (TransmuteFramework.web3){
 
 export class FormComponent extends React.Component<any, any> {
 
+    state = {
+      open: false,
+    };
+
+    handleOpen = () => {
+      this.setState({open: true});
+    };
+
+    handleClose = () => {
+      this.setState({open: false});
+    };
+
     render() {
-
-        const advice = () => {
-            if (this.props.transmute.addresses.length) {
-                return (<div>
-                    <h4>Your Wallet Address</h4>
-                    <Field name="fromAddress" style={{ width: '100%' }} component={TextField} hintText="From Address" />
-                    <br />
-                    <h4>Habitat Texas Relief Fund Wallet</h4>
-                    <Field name="toAddress" disabled style={{ width: '100%' }} component={TextField} hintText="To Address" />
-                    <br />
-                    <h4>Donation Amount in ETH</h4>
-                    <Field name="donationAmount" style={{ width: '100%' }} component={TextField} hintText="Donation Amount" />
-                    <br />
-                    <RaisedButton
-                        secondary={true}
-                        label="Donate"
-                        onTouchTap={() => {
-                            if (!TransmuteFramework.web3) {
-                                alert('You will be redirected to install metamask.')
-                                window.location.href = "https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en";
-                            } else {
-                                this.props.handleSubmit();
-                            }
-
-                        }}
-                    />
-                </div>)
-            }
-            return (<div>
-                <h3>
-                    In order to donate via web browser, you need to install and unlock MetaMask.
-                </h3>
-                <a href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en">
-                    Install MetaMask Chrome Extension
-                </a>
-            </div>)
-        }
+      const actions = [
+        <FlatButton
+          label="Close"
+          primary={true}
+          onClick={this.handleClose}
+        />,
+        <FlatButton
+          label="Install Metamask"
+          primary={true}
+          keyboardFocused={true}
+          onClick={() => window.location.href = "https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en"}
+        />,
+      ];
 
         return (
-
-            <form className='DonateForm' style={{ width: '100%' }}>
-                {
-                    advice()
-                }
-            </form>
+            <div>
+              <form className='DonateForm' style={{ width: '100%' }}>
+                <h4>Your Wallet Address</h4>
+                <Field name="fromAddress" style={{ width: '100%' }} component={TextField} hintText="From Address" />
+                <br />
+                <h4>Habitat Texas Relief Fund Wallet</h4>
+                <Field name="toAddress" disabled style={{ width: '100%' }} component={TextField} hintText="To Address" />
+                <br />
+                <h4>Donation Amount in ETH</h4>
+                <Field name="donationAmount" style={{ width: '100%' }} component={TextField} hintText="Donation Amount" />
+                <br />
+                <RaisedButton
+                    secondary={true}
+                    label="Donate"
+                    onTouchTap={() => {
+                        if (!TransmuteFramework.web3 || !this.props.transmute.addresses.length) {
+                            this.handleOpen();
+                        } else {
+                            this.props.handleSubmit();
+                        }
+                    }}
+                    style={{ float: 'right' }}
+                />
+              </form>
+              <Dialog
+                title="Metamask Required"
+                actions={actions}
+                modal={false}
+                open={this.state.open}
+                onRequestClose={this.handleClose}
+              >
+                ETH4Harvey requires Metamask to donate through the site.
+                <br/>
+                <br/>
+                Donations can also be made by sending ETH to <a href="https://etherscan.io/address/0xeD81c9058C78e28886E5411A2d55b42eB515f6E0">0xeD81c9058C78e28886E5411A2d55b42eB515f6E0</a>
+              </Dialog>
+            </div>
         );
     }
 }

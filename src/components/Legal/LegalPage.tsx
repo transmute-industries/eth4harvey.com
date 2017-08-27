@@ -9,10 +9,10 @@ return (
 <div className="legal-container">
 <AppBar />
 <Paper className="legal-paper">
-<h3>Privacy</h3>
-<h2>
-1. Information We Collect From You
-</h2>
+<h2>Privacy</h2>
+<h3>
+Information We Collect From You
+</h3>
 <p>
 You can visit this website without revealing any information to us about yourself.
 </p>
@@ -22,42 +22,42 @@ Personal Information
 <p>
 If you donate on eth4harvey, you can optionally provide your donor email address and name in association with your transaction ID and donation amount.
 </p>
-<h2>
+<h3>
 Why we Collect Personal Information From You
-</h2>
+</h3>
 <p>
 Any personal information collected is for the providing of a receipt of donation from Habitat for Humanity.
 </p>
-<h2>
+<h3>
 How we use Your Personal Information
-</h2>
+</h3>
 <p>
 Your personal information may be passed by eth4harvey to Habitat for Humanity Texas, to inform them of your ETH donation.
 If you wish to donate anonymously, please leave the form blank.
 </p>
-<h2>
+<h3>
 Protection of Your Personal Information
-</h2>
+</h3>
 <p>
 If you elect to provide to us with personal information (Name, Email, Transaction ID, Amount), it will be shared solely with Habitat for Humanity Texas.
 </p>
 
-<h2>
+<h3>
 Changes to our Privacy Policy
-</h2>
+</h3>
 <p>
 Any changes to our privacy policy in the future will be posted to the website.
 Unless otherwise specified all such changes will take effect immediately upon posting to the website.
 </p>
-<h2>
+<h3>
 Legal Process
-</h2>
+</h3>
 <p>
 Although unlikely, eth4harvey may be forced by law to provide personally identifiable information to the appropriate authorities.
 </p>
-<h2>
+<h3>
 Acceptance of our Privacy Policy
-</h2>
+</h3>
 <p>
 Use of the eth4harvey website and associated services implies acceptance of this Privacy Policy.
 If you are not satisfied with any aspect of it, please do not continue to use the website and services.
@@ -66,7 +66,7 @@ This policy may change from time to time and you are deemed to have accepted the
 If you have any questions about our Privacy Policy please contact us via email at <a href="mailto:contact@eth4harvey.com" target="_top" >contact@eth4harvey.com</a>.
 </p>
 
-<h3>Terms of Service</h3>
+<h2>Terms of Service</h2>
 <p>
 Welcome to eth4harvey.com. These Terms of Use govern your access to and use of this website
 and various online tools and services that eth4harvey makes available to donors

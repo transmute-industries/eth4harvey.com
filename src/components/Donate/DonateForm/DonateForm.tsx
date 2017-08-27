@@ -68,7 +68,6 @@ export class FormComponent extends React.Component<any, any> {
                     advice()
                 }
             </form>
-
         );
     }
 }

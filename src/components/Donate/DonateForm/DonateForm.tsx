@@ -83,7 +83,8 @@ export class FormComponent extends React.Component<any, any> {
                 open={this.state.open}
                 onRequestClose={this.handleClose}
               >
-                ETH4Harvey requires Metamask to donate through the site.
+                ETH4Harvey requires Metamask to donate through the site. 
+                After unlocking your Metamask account, you should see your address in the donation form.
                 <br/>
                 <br/>
                 Donations can also be made by sending ETH to <a href="https://etherscan.io/address/0xeD81c9058C78e28886E5411A2d55b42eB515f6E0">0xeD81c9058C78e28886E5411A2d55b42eB515f6E0</a>

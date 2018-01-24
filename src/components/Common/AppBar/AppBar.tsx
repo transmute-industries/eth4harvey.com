@@ -28,7 +28,7 @@ class TransmuteAppBar extends React.Component<any, any> {
     return (
       <div>
         <AppBar
-          title="Hurricane Harvey Relief"
+          title="ETH 4 Harvey"
           onTitleTouchTap={this.handleTitleTouch}
           iconElementLeft={<IconButton onTouchTap={this.handleToggle}><Menu /></IconButton>}
         />
@@ -39,12 +39,7 @@ class TransmuteAppBar extends React.Component<any, any> {
               store.dispatch(push('/'));
             }}
           />
-          <MenuItem
-            primaryText="Donate"
-            onTouchTap={() => {
-              store.dispatch(push('/donate'));
-            }}
-          />
+        
           <Divider />
           <Subheader>Habitat For Humanity</Subheader>
           <MenuItem
@@ -56,7 +51,7 @@ class TransmuteAppBar extends React.Component<any, any> {
           <MenuItem
             primaryText="Public Wallet"
             onTouchTap={() => {
-              window.location.href = "https://etherscan.io/address/0xeD81c9058C78e28886E5411A2d55b42eB515f6E0";
+              window.location.href = "https://etherscan.io/address/0xfcBFcC2395BD2ad0811a246883Eb969d4D9442cD";
             }}
           />
           <Divider />

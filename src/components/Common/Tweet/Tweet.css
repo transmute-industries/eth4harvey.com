@@ -1,0 +1,21 @@
+.tweets {
+    margin-top: 40px;
+}
+
+.tweets .column {
+    float: left;
+    width: 50%;
+    padding: 8px;
+}
+
+/* Clear floats after the columns */
+.tweets .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.ti-particle > div {
+  height: 100%;
+}

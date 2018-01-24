@@ -1,40 +1,40 @@
 
-.cta-c {
-    /* top: 64px; */
-    position: absolute;
-    color: #fff;
-    text-align: center;
-    
+
+.main-text{
+  position: absolute;
+  color: #fff;
+  /* text-align: center; */
+  padding: 40px;
 }
 
-.habitatLogo{
-    width: 300px;
-    margin: auto;
+.donate-addresses {
+  color: #fff;
+  /* width: 100%; */
+  /* margin: auto; */
+
 }
 
-.blurb {
-    width: 70%;
-    margin: auto;
-    padding-bottom: 32px;
+.copy-eth, .copy-btc{
+  float: right;
+}
+
+.habitatLogo {
+   position: absolute;
+   width: 100px;
+   bottom: 20px;
 }
 
 .transmuteLogo {
-    width: 100px;
-    /* position: absolute;
-    bottom: 12px;
-    right: 12px; */
-    display: block;
-    margin: auto;
-    padding-top: 32px;
-    padding-bottom: 16px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 100px;
+ 
 }
 
 
-/* .tweet-container{
-    
-
-} */
-
-.twitter-tweet{
-    margin: auto;
+.copied-msg{
+  text-align: center;
+  padding: 20px;
+  color: white;
 }

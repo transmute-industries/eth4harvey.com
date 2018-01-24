@@ -17,22 +17,23 @@ import { store, history } from './store/store';
 console.debug('🦄  Transmute  🦄');
 
 import HomePage from './components/Home/HomePage';
-import DonatePage from './components/Donate/DonatePage'
-import LegalPage from './components/Legal/LegalPage'
+import LegalPage from './components/Legal/LegalPage';
 
 const lightMuiTheme = getMuiTheme(lightBaseTheme);
 
 ReactDOM.render(
+  <MuiThemeProvider muiTheme={lightMuiTheme}>
   <Provider store={store}>
     <ConnectedRouter history={history}>
-      <MuiThemeProvider muiTheme={lightMuiTheme}>
+   
         <div style={{ height: '100%' }}>
           <Route exact={true} path="/" component={HomePage} />
-          <Route exact={true} path="/donate" component={DonatePage} />
           <Route exact={true} path="/legal" component={LegalPage} />
         </div>
-      </MuiThemeProvider>
+     
     </ConnectedRouter>
-  </Provider>,
+  </Provider>
+  </MuiThemeProvider>
+  ,
   document.getElementById('root')
 );

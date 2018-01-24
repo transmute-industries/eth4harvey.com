@@ -9,6 +9,7 @@
 
 .donate-addresses {
   color: #fff;
+
   /* width: 100%; */
   /* margin: auto; */
 
@@ -32,9 +33,9 @@
  
 }
 
-
 .copied-msg{
-  text-align: center;
+  font-size: 1em;
+  text-align: left;
   padding: 20px;
   color: white;
 }

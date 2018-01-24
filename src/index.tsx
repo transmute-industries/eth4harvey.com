@@ -9,7 +9,7 @@ import {
 import * as injectTapEventPlugin from 'react-tap-event-plugin';
 injectTapEventPlugin();
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import { MuiThemeProvider, lightBaseTheme } from 'material-ui/styles';
+import { MuiThemeProvider } from 'material-ui/styles';
 import './index.css';
 
 import { store, history } from './store/store';
@@ -18,6 +18,9 @@ console.debug('🦄  Transmute  🦄');
 
 import HomePage from './components/Home/HomePage';
 import LegalPage from './components/Legal/LegalPage';
+
+
+import lightBaseTheme from './theme'
 
 const lightMuiTheme = getMuiTheme(lightBaseTheme);
 

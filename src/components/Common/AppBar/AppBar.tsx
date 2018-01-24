@@ -65,7 +65,7 @@ class TransmuteAppBar extends React.Component<any, any> {
           <Divider />
           <Subheader>Legal</Subheader>
           <MenuItem
-            primaryText="Terms And Conditions"
+            primaryText="Terms and Conditions"
             onTouchTap={() => {
               store.dispatch(push('/legal'));
             }}

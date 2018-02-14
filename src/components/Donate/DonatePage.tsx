@@ -29,10 +29,10 @@ export default class DonatePage extends React.Component<any, any> {
                     <Row middle="xs" >
                     <Col xs={12} sm={4}>
                         <div style={{ 'text-align': 'center'}}>
-                          <QRCode value="0xeD81c9058C78e28886E5411A2d55b42eB515f6E0" size={256} />
+                          <QRCode value="0xfcBFcC2395BD2ad0811a246883Eb969d4D9442cD" size={256} />
                           <br/>
                           <p style={{ 'font-size' : 14 }}>Habitat For Humanity Texas Wallet</p>
-                          <p style={{ 'font-size' : 10 }}>0xeD81c9058C78e28886E5411A2d55b42eB515f6E0</p>
+                          <p style={{ 'font-size' : 10 }}>0xfcBFcC2395BD2ad0811a246883Eb969d4D9442cD</p>
                         </div>
                     </Col>
                         <Col xs={12} sm={8}>

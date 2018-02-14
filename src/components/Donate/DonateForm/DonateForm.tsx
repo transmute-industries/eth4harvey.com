@@ -87,7 +87,7 @@ export class FormComponent extends React.Component<any, any> {
                 After unlocking your Metamask account, you should see your address in the donation form.
                 <br/>
                 <br/>
-                Donations can also be made by sending ETH to <a href="https://etherscan.io/address/0xeD81c9058C78e28886E5411A2d55b42eB515f6E0">0xeD81c9058C78e28886E5411A2d55b42eB515f6E0</a>
+                Donations can also be made by sending ETH to <a href="https://etherscan.io/address/0xfcBFcC2395BD2ad0811a246883Eb969d4D9442cD">0xfcBFcC2395BD2ad0811a246883Eb969d4D9442cD</a>
               </Dialog>
             </div>
         );
@@ -110,8 +110,8 @@ export default connect(
         transmute: transmute,
         initialValues: {
             fromAddress: fromAddress,
-            toAddress: '0xeD81c9058C78e28886E5411A2d55b42eB515f6E0',
-            // https://etherscan.io/address/0xeD81c9058C78e28886E5411A2d55b42eB515f6E0
+            toAddress: '0xfcBFcC2395BD2ad0811a246883Eb969d4D9442cD',
+            // https://etherscan.io/address/0xfcBFcC2395BD2ad0811a246883Eb969d4D9442cD
             donationAmount: .1,
             provider: transmute.provider,
         },

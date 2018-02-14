@@ -1,64 +1,124 @@
-import * as React from 'react';
-import { Particle } from '../Common/Particle/Particle';
-import './HomePage.css';
-import RaisedButton from 'material-ui/RaisedButton';
-import { push } from 'react-router-redux';
-import { store } from '../../store/store';
+import * as React from "react";
+import { Particle } from "../Common/Particle/Particle";
+import "./HomePage.css";
 
-import { Grid, Row, Col } from 'react-flexbox-grid';
-const transmuteLogo = require('../../images/logo-white.png');
-const habitatLogo = require('../../images/harvey/habitat.png');
+// import { push } from "react-router-redux";
+// import { store } from "../../store/store";
+
+import AppBar from "../Common/AppBar/AppBar";
+
+const transmuteLogo = require("../../images/logo-white.png");
+const habitatLogo = require("../../images/harvey/habitat.png");
+
+import { CopyToClipboard } from "react-copy-to-clipboard";
+
+import RaisedButton from "material-ui/RaisedButton";
+
+import { ContentContentCopy } from "material-ui/svg-icons";
+
+const iconStyles = {
+  marginRight: 24
+};
+
+import Tweet from "../Common/Tweet/Tweet";
 
 export default class HomePage extends React.Component<any, any> {
-    launchDemo(path: string) {
-        console.debug(path);
-        store.dispatch(push(path));
-    }
-    render() {
-        return (
-            <Particle>
-                <div className="cta-c">
-                    <Grid fluid={true} >
-                        <Row middle="xs" >
-                            <Col xs={12} sm={12}>
-                                <img className="habitatLogo" src={habitatLogo} style={{ marginTop: '32px' }} />
-                                <h3>ETH Relief for Hurricane Harvey Victims</h3>
-                                <h5>ETH4Harvey Campaign Open Aug. 26 - Sept. 25</h5>
-                                <p className="blurb">
-                                    Habitat for Humanity Texas is now accepting donations in Ether (ETH).
-                                    Use your ETH to help rebuild the communities and lives affected by Hurricane Harvey.
-                                    100% of the proceeds are donated directly to Habitat for Humanity Texas to
-                                    fund their long term disaster relief efforts in Harvey's aftermath.
-                                </p>
+  state = {
+    value: "",
+    copied: false
+  };
 
-                                <div className="tweet-container">
-                                <blockquote className="twitter-tweet" data-lang="en">
-                                    <p lang="en" dir="ltr">
-                                        <a href="https://twitter.com/HabitatTexas">@HabitatTexas</a>
-                                        accepting Ether donations to provide relief for Hurricane Harvey victims.
-                                        Donate at <a href="https://t.co/rxGzNsH3d7">https://t.co/rxGzNsH3d7</a>
-                                        <a href="https://twitter.com/hashtag/ETH4Harvey?src=hash">#ETH4Harvey</a>
-                                    </p>&mdash; Habitat Texas (@HabitatTexas)
-                                        <a href="https://twitter.com/HabitatTexas/status/901989318792794112">August 28, 2017</a>
-                                </blockquote>
+  render() {
+    return (
+      <div>
+        <AppBar />
+        <div className="main-text">
+          <div className="intro">
+            <h1>
+              Habitat for Humanity Texas is now accepting donations in Ether
+              (ETH) and Bitcoin (BTC).
+            </h1>
 
-                                </div>
-
-                                <RaisedButton
-                                    secondary={true}
-                                    label="Donate ETH"
-                                    onTouchTap={() => {
-                                        this.launchDemo('/donate');
-                                    }}
-                                />
-                                <a href="https://transmute.industries" target="_blank">
-                                    <img className="transmuteLogo" src={transmuteLogo} />
-                                </a>
-                            </Col>
-                        </Row>
-                    </Grid>
-                </div>
-            </Particle>
-        );
-    }
+            <h2>
+              Help rebuild the communities and lives affected by Hurricane
+              Harvey. 100% of the proceeds are donated directly to Habitat for
+              Humanity Texas to fund their long term disaster relief efforts in
+              Harvey's aftermath.
+            </h2>
+          </div>
+          <h3>Ethereum:</h3>
+          <div className="donate-addresses">
+            <span
+              style={{
+                width: "30%",
+                paddingLeft: "10px",
+                fontSize: "1.2em",
+                color: "#CCFF90"
+              }}
+            >
+              0xfcBFcC2395BD2ad0811a246883Eb969d4D9442cD
+            </span>
+            <CopyToClipboard
+              className="copy-eth"
+              text={"0xfcBFcC2395BD2ad0811a246883Eb969d4D9442cD"}
+              onCopy={(value: any) => {
+                this.setState({ value, copied: true });
+              }}
+            >
+              <RaisedButton
+                label="Copy Ethereum Address"
+                labelPosition="after"
+                secondary={true}
+                icon={<ContentContentCopy style={iconStyles} color={"white"} />}
+              />
+            </CopyToClipboard>
+          </div>
+          <h3>Bitcoin</h3>
+          <div className="donate-addresses">
+            <span
+              style={{
+                paddingLeft: "10px",
+                fontSize: "1.2em",
+                color: "#CCFF90"
+              }}
+            >
+              1P4q7ZhN2wBFwt4YXxfmmfg3fCQWCDUd6G
+            </span>
+            <CopyToClipboard
+              className="copy-btc"
+              text={"1P4q7ZhN2wBFwt4YXxfmmfg3fCQWCDUd6G"}
+              onCopy={(value: any) => {
+                this.setState({ value, copied: true });
+              }}
+            >
+              <RaisedButton
+                label="Copy Bitcoin Address"
+                labelPosition="after"
+                secondary={true}
+                icon={<ContentContentCopy style={iconStyles} color={"white"} />}
+              />
+            </CopyToClipboard>
+          </div>
+          <h3 style={{color: '#fff000'}}>
+            {this.state.copied ? <span>Copied: {this.state.value}</span> : null}
+          </h3>
+          <Tweet />
+          <h5>Updates:</h5>
+          January 23rd 2018
+          <p>New ETH and BTC addresses for Habitat Texas.</p>
+          <br />
+          August 28, 2017
+          <p>Deployed Ethereum Donation Site.</p>
+          <Particle>
+            <a href="http://habitattexas.org/" target="_blank">
+              <img className="habitatLogo" src={habitatLogo} />
+            </a>
+            <a href="https://tranmsute.industries" target="_blank">
+              <img className="transmuteLogo" src={transmuteLogo} />
+            </a>
+          </Particle>
+        </div>
+      </div>
+    );
+  }
 }
